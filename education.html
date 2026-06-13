@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education - Wan Fazlin Huwaida</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="logo-area"><a href="student.html"><img src="images/logo.png" alt="Logo"></a></div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="profile.html">About Me</a></li>
+                <li><a href="education.html" class="active">Education</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="experience.html">Experience</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Note instructions to click image -->
+        <p style="text-align:center; margin-bottom: 20px; font-style: italic; color: #495057;">*Click on any image below to zoom and enlarge.*</p>
+
+        <!-- Academic Gallery Grid -->
+        <section class="grid-3">
+            <div class="card">
+                <h3>STPM Award</h3>
+                <img src="images/image2.jpg" alt="STPM Award" class="img-responsive zoomable">
+            </div>
+            <div class="card">
+                <h3>Top Achievers Group</h3>
+                <img src="images/image4.jpg" alt="Group of STPM students" class="img-responsive zoomable" style="margin-bottom: 10px;">
+                <img src="images/image9.jpg" alt="Holding CGPA slips" class="img-responsive zoomable">
+            </div>
+            <div class="card">
+                <h3>Official CGPA</h3>
+                <img src="images/image5.jpg" alt="STPM CGPA" class="img-responsive zoomable">
+            </div>
+        </section>
+
+        <!-- STPM Table Moved Here -->
+        <section class="card" style="margin-top: 30px;">
+            <h2 style="text-align: center; border-bottom: 2px solid #4f6d7a; padding-bottom: 10px;">&mdash; STPM QUALIFICATIONS &mdash;</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>SUBJECT</th><th>GRADE</th><th>GRADE POINT</th><th>CREDIT</th><th>REMARKS</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>Bahasa Melayu</td><td>A</td><td>4.00</td><td>4</td><td>Excellent</td></tr>
+                    <tr><td>English</td><td>B+</td><td>3.33</td><td>3</td><td>Very Good</td></tr>
+                    <tr><td>Mathematics (T)</td><td>B</td><td>3.00</td><td>3</td><td>Good</td></tr>
+                    <tr><td>Pengajian Am</td><td>B+</td><td>3.33</td><td>3</td><td>Very Good</td></tr>
+                    <tr><td>Kesusasteraan Melayu</td><td>A-</td><td>3.67</td><td>4</td><td>Excellent</td></tr>
+                    <tr style="background-color: #fbf5f0; font-weight: bold;">
+                        <td>CGPA</td><td></td><td>3.25</td><td>17</td><td>Very Good</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <!-- Modal for Zoom Feature -->
+    <div id="imageModal" class="modal">
+        <span class="close-modal">&times;</span>
+        <img class="modal-content" id="zoomedImage">
+    </div>
+
+    <button id="btnBackToTop">Top</button>
+    <footer><p>&copy; 2026 Wan Fazlin Huwaida. All Rights Reserved.</p></footer>
+    <script src="js/script.js"></script>
+</body>
+</html>
