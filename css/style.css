@@ -91,3 +91,16 @@ th { background-color: #1b263b; color: #ffffff; }
 #btnBackToTop { display: none; position: fixed; bottom: 20px; right: 20px; z-index: 99; border: none; background-color: #1b263b; color: white; cursor: pointer; padding: 15px; border-radius: 10px; }
 footer { background-color: #212529; color: #adb5bd; padding: 30px 20px; text-align: center; font-size: 0.85rem; margin-top: 60px; }
 footer a { color: #4f6d7a; text-decoration: none; }
+
+/* Portfolio Tool Badges */
+.tool-badge {
+    display: inline-block;
+    background-color: #1b263b;
+    color: #ffffff;
+    padding: 4px 10px;
+    border-radius: 15px;
+    font-size: 0.75rem;
+    font-weight: bold;
+    margin-right: 5px;
+    margin-top: 8px;
+}
