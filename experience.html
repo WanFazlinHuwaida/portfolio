@@ -9,7 +9,7 @@
 <body>
     <header>
         <div class="logo-area"><a href="student.html"><img src="images/logo.png" alt="Logo"></a></div>
-       <nav>
+        <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="introduction.html">Introduction</a></li>
@@ -24,6 +24,9 @@
     </header>
 
     <main>
+        <!-- Added H1 to fix structural warning -->
+        <h1 style="text-align: center; margin-bottom: 30px;">Experience & Involvement</h1>
+        
         <h2>Co-Curricular Activities & Involvement</h2>
         <div class="grid-2">
             <article class="card">
@@ -54,7 +57,12 @@
         </section>
     </main>
 
-    <div id="imageModal" class="modal"><span class="close-modal">&times;</span><img class="modal-content" id="zoomedImage"></div>
+    <div id="imageModal" class="modal">
+        <span class="close-modal">&times;</span>
+        <!-- Added src and alt to modal image -->
+        <img class="modal-content" id="zoomedImage" src="data:," alt="Enlarged experience image">
+    </div>
+    
     <button id="btnBackToTop">Top</button>
     <footer><p>&copy; 2026 Wan Fazlin Huwaida. All Rights Reserved.</p></footer>
     <script src="js/script.js"></script>

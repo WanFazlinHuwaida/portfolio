@@ -24,27 +24,27 @@
     </header>
 
     <main>
-        <!-- Note instructions to click image -->
+        <!-- Added H1 to fix warning -->
+        <h1 style="text-align: center; margin-bottom: 10px;">Education & Academic History</h1>
         <p style="text-align:center; margin-bottom: 20px; font-style: italic; color: #495057;">*Click on any image below to zoom and enlarge.*</p>
 
-        <!-- Academic Gallery Grid -->
-        <section class="grid-3">
+        <!-- Changed <section> to <div> to avoid missing heading warnings on grid -->
+        <div class="grid-3">
             <div class="card">
-                <h3>STPM Award</h3>
+                <h2>STPM Award</h2>
                 <img src="images/image2.jpg" alt="STPM Award" class="img-responsive zoomable">
             </div>
             <div class="card">
-                <h3>Top Achievers Group</h3>
+                <h2>Top Achievers Group</h2>
                 <img src="images/image4.jpg" alt="Group of STPM students" class="img-responsive zoomable" style="margin-bottom: 10px;">
                 <img src="images/image9.jpg" alt="Holding CGPA slips" class="img-responsive zoomable">
             </div>
             <div class="card">
-                <h3>Official CGPA</h3>
+                <h2>Official CGPA</h2>
                 <img src="images/image5.jpg" alt="STPM CGPA" class="img-responsive zoomable">
             </div>
-        </section>
+        </div>
 
-        <!-- STPM Table Moved Here -->
         <section class="card" style="margin-top: 30px;">
             <h2 style="text-align: center; border-bottom: 2px solid #4f6d7a; padding-bottom: 10px;">&mdash; STPM QUALIFICATIONS &mdash;</h2>
             <table>
@@ -67,10 +67,10 @@
         </section>
     </main>
 
-    <!-- Modal for Zoom Feature -->
     <div id="imageModal" class="modal">
         <span class="close-modal">&times;</span>
-        <img class="modal-content" id="zoomedImage">
+        <!-- Added src="data:," and alt to fix validator error for missing attributes -->
+        <img class="modal-content" id="zoomedImage" src="data:," alt="Enlarged gallery image">
     </div>
 
     <button id="btnBackToTop">Top</button>
